@@ -8,6 +8,40 @@
    <meta name="viewport"
          content="width=device-width, initial-scale=1.0">
    <title>ประวัติส่วนตัว</title>
+   <style>
+      h1 {
+         background-color: #4d4c4b;
+         color: #f78b1e;
+         text-align: center;
+         padding: 5px 10px;
+         padding-top: 20px;
+         width: 310px;
+         margin: 0 auto;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
+         border-bottom: 4px solid #f78a1e;
+
+         position: relative;
+      }
+
+      h1::before {
+         content: ' ';
+         position: absolute;
+         width: 40px;
+         border-bottom: 4px solid #f7891f;
+         bottom: -4px;
+         left: -40px;
+      }
+
+      h1::after {
+         content: ' ';
+         position: absolute;
+         width: 40px;
+         border-bottom: 4px solid #f7891f;
+         bottom: -4px;
+         right: -40px;
+      }
+   </style>
 </head>
 
 <body>
