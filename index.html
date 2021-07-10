@@ -24,7 +24,8 @@
          position: relative;
       }
 
-      h1::before {
+      h1::before,
+      h1::after {
          content: ' ';
          position: absolute;
          width: 40px;
@@ -34,11 +35,7 @@
       }
 
       h1::after {
-         content: ' ';
-         position: absolute;
-         width: 40px;
-         border-bottom: 4px solid #f7891f;
-         bottom: -4px;
+         left: auto;
          right: -40px;
       }
    </style>
