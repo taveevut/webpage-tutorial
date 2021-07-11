@@ -26,3 +26,7 @@ h1::after {
    left: auto;
    right: -40px;
 }
+
+.image-1{
+   border-radius: 50%;
+}
