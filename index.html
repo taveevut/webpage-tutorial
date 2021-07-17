@@ -7,179 +7,431 @@
          content="IE=edge">
    <meta name="viewport"
          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-   <title>Bootstrap 5 - Profile</title>
+   <title>Bootstrap 5 - Shopping</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
          rel="stylesheet"
          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
          crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Sarabun:wght@400;700&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap"
          rel="stylesheet">
    <style>
+      html,
       body {
-         font-family: 'Sarabun', sans-serif;
-         background-color: #f9d1d0;
-      }
-
-      .bg-profile {
-         background-image: url(./images/laptop.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-      }
-
-      .my-topic {
-         font-family: 'Kanit', sans-serif;
-         background-color: #f9d1d0;
-         color: #504247;
-         width: 500px;
-         min-width: 500px;
-         margin: 0 auto;
-         border-top-left-radius: 8px;
-         border-top-right-radius: 8px;
-         border-bottom: 4px solid #504247;
-         position: relative;
-      }
-
-      .my-topic::before,
-      .my-topic::after {
-         content: ' ';
-         position: absolute;
-         width: 40px;
-         border-bottom: 4px solid #504247;
-         bottom: -4px;
-         left: -40px;
-      }
-
-      .my-topic::after {
-         left: auto;
-         right: -40px;
-      }
-
-      .my-title-box {
-         background-color: #f9d1d0;
-         width: 500px;
-         min-width: 500px;
-         margin: 0 auto;
-         border-radius: 110px;
-      }
-
-      .my-title {
-         font-family: 'Kanit', sans-serif;
-         background-color: #504247;
-         color: white;
-         width: 480px;
-         min-width: 480px;
-         margin: 0 auto;
-         position: relative;
-      }
-
-      .my-title::before,
-      .my-title::after {
-         content: ' ';
-         position: absolute;
-         width: 15px;
-         height: 15px;
-         background-color: white;
-         top: 30px;
-         left: 20px;
-         border-radius: 50%;
-      }
-
-      .my-title::after {
-         left: auto;
-         right: 20px;
-      }
-
-      .my-detail {
-         background-color: #f8d9e1;
-         border-radius: 110px;
-         padding: 35px;
-      }
-
-      @media screen and (max-width: 640px) {
-
-         .my-topic,
-         .my-title-box,
-         .my-title {
-            width: auto;
-            min-width: auto;
-         }
-
-         .my-topic::before,
-         .my-topic::after {
-            display: none !important;
-         }
-
-         .my-detail {
-            border-radius: 60px;
-            padding: 10px;
-            padding-top: 35px;
-         }
+         font-family: 'Sarabun', Arial, Helvetica, sans-serif;
       }
    </style>
+
 </head>
 
 <body>
-   <div class="container bg-profile bg-white m-4 mx-auto">
-      <div class="row">
-         <div class="col-12">
-            <h1 class="text-center px-3 pt-4 pb-1 mt-3 mb-5 my-topic fw-bold">ประวัติส่วนตัว</h1>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+         <a class="navbar-brand"
+            href="#">Kaisongonline</a>
+         <button class="navbar-toggler"
+                 type="button"
+                 data-bs-toggle="collapse"
+                 data-bs-target="#navbarNavAltMarkup"
+                 aria-controls="navbarNavAltMarkup"
+                 aria-expanded="false"
+                 aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse"
+              id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-link active"
+                  aria-current="page"
+                  href="#">หน้าแรก</a>
+               <a class="nav-link"
+                  href="#">สินค้าของเรา</a>
+               <a class="nav-link"
+                  href="#">ติดต่อเรา</a>
+            </div>
          </div>
       </div>
-      <div class="row">
-         <div class="col-md-4 col-sm-12 text-center text-md-end">
-            <img src="./images/avatar.png"
-                 width="250">
-         </div>
-         <div class="col-md-8 col-sm-12">
-            <h1 class="text-center text-uppercase fw-bold py-3 px-5 mb-3 mb-md-5 my-title-box">"Pokportfolio"</h1>
-            <h2 class="text-center p-3 mb-3 my-title">จุดมุ่งหมายทางอาชีพ</h2>
-            <p class="mt-4 mx-1 mx-md-5">
-               มีความประสงค์จะใช้ความสามารถ ในการทำงานด้าน คอมพิวเตอร์ การโปรแกรม และงานธุรการ ซึ่งจะช่วยให้กระผมประสบความสำเร็จ รวมทั้งองค์กรหรือหน่วยงานก็จะประสบความสำเร็จตามเป้าหมายที่วางไว้ด้วย
-            </p>
+   </nav>
+
+   <section class="my-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 text-center">
+               <h2>LOGO</h2>
+            </div>
+            <div class="col-md-9 text-center">
+               <form class="row">
+                  <div class="col-md-12">
+                     <div class="input-group">
+                        <input type="text"
+                               class="form-control"
+                               placeholder="ระบุชื่อสินค้า"
+                               aria-describedby="button-addon2">
+                        <button class="btn btn-outline-primary"
+                                type="button"
+                                id="button-addon2">ค้นหา</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
          </div>
       </div>
-      <div class="row">
-         <div class="col-12">
-            <div class="my-detail mb-5 mx-1 mx-md-5">
-               <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                     <h2 class="text-center p-3 mb-3 my-title">ข้อมูลส่วนตัว</h2>
-                     <p>
-                        ชื่อ-สกุล: ทวีวุฒิ นากอหม๊ะ <br>
-                        ชื่อเล่น: ท็อป (top) <br>
-                        ศาสนา: อิสลาม <br>
-                        สถานศึกษา: มหาวิทยาราชภัฏยะลา <br>
-                        สายการเรียน: วิทยาการคอมพิวเตอร์
-                     </p>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                     <h2 class="text-center p-3 mb-3 my-title">ติดต่อฉัน</h2>
-                     <p>
-                        เว็บไซต์ของฉัน: <a href="http://itopcybersoft.com"
-                           target="_blank"> http://itopcybersoft.com</a> <br>
-                        Facebook: <a href="https://facebook.com/itopcybersoft"
-                           target="_blank">itopcybersoft</a><br>
-                        Line Official: <a href="https://lin.ee/R2G4xlB"
-                           target="_blank">itopcybersoft</a><br>
-                        ที่อยู่ E-mail: <a href="mailto:itopcybersoft@gmail.com">itopcybersoft@gmail.com</a>
-                     </p>
-                  </div>
+   </section>
+
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 text-center">
+               <div class="alert alert-secondary fw-bold"
+                    role="alert">
+                  <h5 class="mb-0">หมวดหมู่สินค้า</h5>
                </div>
-               <div class="row">
-                  <div class="col-12">
-                     <h2 class="text-center p-3 mb-3 my-title">ประวัติการทำงาน</h2>
-                     <ul>
-                        <li>บริษัท สกู๊ดสกิล จำกัด ตำแหน่ง โปรแกรมเมอร์ เป็นระยะเวลา 7 เดือน ตั้งแต่วันที่ 4 พฤศจิกายน 2556 จนถึงวันที่ 5 พฤษภาคม 2557 </li>
-                        <li>บริษัท ทริปเปิล วิน ซิสเต็มส์ จำกัด ตำแหน่ง โปรแกรมเมอร์ เป็นระยะเวลา 1 ปี 7 เดือน ตั้งแต่วันที่ 1 พฤษภาคม 2557 จนถึงวันที่ 29 กุมภาพันธ์ 2559 </li>
-                        <li>วิทยาลัยอิสลามศึกษา ม.อ. ปัตตานี เป็นระยะเวลา 2 ปี ตั้งแต่ 3 เมษายน 2559 จนถึงวันที่ 15 พฤศจิกายน 2561</li>
-                        <li>ปัจจุบันทำงานในตำแหน่งผู้จัดการร้านไอท็อปไซเบอร์ซอฟต์ (จัดการทำโปรแกรมคอมพิวเตอร์และบริการเว็บเซอร์ฟเวอร์)</li>
-                     </ul>
-                  </div>
+            </div>
+            <div class="col-md-9 text-center">
+               <div class="alert alert-secondary fw-bold"
+                    role="alert">
+                  <h5 class="mb-0">สินค้าที่ขายดี</h5>
                </div>
             </div>
          </div>
       </div>
-   </div>
+   </section>
+
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="row">
+                  <div class="col-md-12 mb-4">
+                     <div class="list-group">
+                        <a href="#"
+                           class="list-group-item list-group-item-action active"
+                           aria-current="true">
+                           กระท้อน
+                        </a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">กล้วยเฟอี</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">กะทกรก</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">กัดลิ้น</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">กีวี (พืช)</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">เกรปฟรุต</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">เกาลัดญี่ปุ่น</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">เกาลัดไทย</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">แก้วมังกร</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 mb-4">
+                     <div class="card text-dark bg-light">
+                        <div class="card-body">
+                           <a href="https://track.thailandpost.co.th/"
+                              target="_blank">
+                              <img src="./images/ems.jpeg"
+                                   class="img-fluid">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 mb-4">
+                     <div class="card text-dark bg-light">
+                        <div class="card-body">
+                           <h1 class="text-center">Box 2</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 mb-4">
+                     <div class="card text-dark bg-light">
+                        <div class="card-body">
+                           <h1 class="text-center">Box 3</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 mb-4">
+                     <div class="card text-dark bg-light">
+                        <div class="card-body">
+                           <h1 class="text-center">Box 4</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-9">
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.woolerwheel.co.uk/wp-content/uploads/2015/03/Banana-1--300x300.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">กล้วยน้ำหว้า</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">100 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6KrHtbExl_a3s15rJrIWXzXMMmV-_s0jLQ&usqp=CAU"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ทุเรียนมูซังคิง</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">3,000 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.เกร็ดความรู้.net/wp-content/uploads/2015/05/jackfruit-cover.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ขนุมจำโบ้</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">2,400 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.woolerwheel.co.uk/wp-content/uploads/2015/03/Banana-1--300x300.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">กล้วยน้ำหว้า</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">100 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6KrHtbExl_a3s15rJrIWXzXMMmV-_s0jLQ&usqp=CAU"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ทุเรียนมูซังคิง</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">3,000 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.เกร็ดความรู้.net/wp-content/uploads/2015/05/jackfruit-cover.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ขนุมจำโบ้</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">2,400 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.woolerwheel.co.uk/wp-content/uploads/2015/03/Banana-1--300x300.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">กล้วยน้ำหว้า</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">100 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6KrHtbExl_a3s15rJrIWXzXMMmV-_s0jLQ&usqp=CAU"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ทุเรียนมูซังคิง</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">3,000 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.เกร็ดความรู้.net/wp-content/uploads/2015/05/jackfruit-cover.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ขนุมจำโบ้</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">2,400 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.woolerwheel.co.uk/wp-content/uploads/2015/03/Banana-1--300x300.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">กล้วยน้ำหว้า</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">100 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6KrHtbExl_a3s15rJrIWXzXMMmV-_s0jLQ&usqp=CAU"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ทุเรียนมูซังคิง</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">3,000 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.เกร็ดความรู้.net/wp-content/uploads/2015/05/jackfruit-cover.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ขนุมจำโบ้</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">2,400 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.woolerwheel.co.uk/wp-content/uploads/2015/03/Banana-1--300x300.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">กล้วยน้ำหว้า</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">100 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6KrHtbExl_a3s15rJrIWXzXMMmV-_s0jLQ&usqp=CAU"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ทุเรียนมูซังคิง</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">3,000 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                     <div class="card">
+                        <img src="https://www.เกร็ดความรู้.net/wp-content/uploads/2015/05/jackfruit-cover.jpg"
+                             class="card-img-top">
+                        <div class="card-body">
+                           <h5 class="card-title fw-bold">ขนุมจำโบ้</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <div class="d-flex justify-content-between">
+                              <h3 class="text-lg">2,400 ฿</h3>
+                              <a href="#"
+                                 class="btn btn-success">สั่งซื้อสินค้า</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                     <li class="page-item disabled">
+                        <a class="page-link"
+                           href="#"
+                           tabindex="-1"
+                           aria-disabled="true">ก่อนหน้า</a>
+                     </li>
+                     <li class="page-item"><a class="page-link"
+                           href="#">1</a></li>
+                     <li class="page-item"><a class="page-link"
+                           href="#">2</a></li>
+                     <li class="page-item"><a class="page-link"
+                           href="#">3</a></li>
+                     <li class="page-item">
+                        <a class="page-link"
+                           href="#">ถัดไป</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </section>
 </body>
 
 </html>
