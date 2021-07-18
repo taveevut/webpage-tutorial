@@ -486,63 +486,72 @@
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true">
       <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title"
-                   id="staticBackdropLabel">ยืนยันการสั่งซื้อสินค้า</h5>
-               <button type="button"
-                       class="btn-close"
-                       data-bs-dismiss="modal"
-                       aria-label="Close"></button>
+         <form method="POST"
+               action="https://nakomah.com/linenotify/notify.php">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title"
+                      id="staticBackdropLabel">ยืนยันการสั่งซื้อสินค้า</h5>
+                  <button type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12 text-center">
+                        <img width="300"
+                             height="300"
+                             src="">
+                        <h4 class="my-4">&nbsp;</h4>
+                        <input type="hidden"
+                               name="product">
+                     </div>
+                  </div>
+                  <div class="row mb-3">
+                     <div class="col-md-7">
+                        <label class="form-label">ชื่อ-สกุล (ลูกค้า)</label>
+                        <input type="text"
+                               name="name"
+                               class="form-control"
+                               placeholder="ระบุชื่อ-สกุล">
+                     </div>
+                     <div class="col-md-5">
+                        <label class="form-label">เบอร์โทรศัพท์</label>
+                        <input type="text"
+                               name="tel"
+                               class="form-control"
+                               placeholder="ระบุเบอร์โทรศัพท์">
+                     </div>
+                  </div>
+                  <div class="row mb-3">
+                     <div class="col-md-12">
+                        <label class="form-label">ที่อยู่สำหรับจัดส่งสินค้า</label>
+                        <input type="text"
+                               name="address"
+                               class="form-control"
+                               placeholder="ระบุที่อยู่สำหรับจัดส่งสินค้า">
+                     </div>
+                  </div>
+                  <div class="row mb-3">
+                     <div class="col-md-12">
+                        <label class="form-label">เพิ่มเติม</label>
+                        <textarea class="form-control"
+                                  name="remark"
+                                  rows="3"
+                                  placeholder="ระบุรายละเอียดเพิ่มเติม"></textarea>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal">ปิด</button>
+                  <button type="submit"
+                          class="btn btn-success">ยืนยัน</button>
+               </div>
             </div>
-            <div class="modal-body">
-               <div class="row">
-                  <div class="col-md-12 text-center">
-                     <img width="300"
-                          height="300"
-                          src="">
-                     <h4 class="my-4">&nbsp;</h4>
-                  </div>
-               </div>
-               <div class="row mb-3">
-                  <div class="col-md-7">
-                     <label class="form-label">ชื่อ-สกุล (ลูกค้า)</label>
-                     <input type="text"
-                            class="form-control"
-                            placeholder="ระบุชื่อ-สกุล">
-                  </div>
-                  <div class="col-md-5">
-                     <label class="form-label">เบอร์โทรศัพท์</label>
-                     <input type="text"
-                            class="form-control"
-                            placeholder="ระบุเบอร์โทรศัพท์">
-                  </div>
-               </div>
-               <div class="row mb-3">
-                  <div class="col-md-12">
-                     <label class="form-label">ที่อยู่สำหรับจัดส่งสินค้า</label>
-                     <input type="text"
-                            class="form-control"
-                            placeholder="ระบุที่อยู่สำหรับจัดส่งสินค้า">
-                  </div>
-               </div>
-               <div class="row mb-3">
-                  <div class="col-md-12">
-                     <label class="form-label">เพิ่มเติม</label>
-                     <textarea class="form-control"
-                               rows="3"
-                               placeholder="ระบุรายละเอียดเพิ่มเติม"></textarea>
-                  </div>
-               </div>
-            </div>
-            <div class="modal-footer">
-               <button type="button"
-                       class="btn btn-secondary"
-                       data-bs-dismiss="modal">ปิด</button>
-               <button type="button"
-                       class="btn btn-success">ยืนยัน</button>
-            </div>
-         </div>
+         </form>
       </div>
    </div>
 
@@ -558,6 +567,7 @@
 
             var elmModal = $('.modal-body');
             elmModal.find('img').attr('src', images).next().text(`${title} / ${price}`);
+            $('input[name="product"]').val(`${title} / ${price}`);
          });
       });
    </script>
