@@ -1,5 +1,5 @@
 <?php
-   include("./products.php");
+   include("./data.php");
 ?>
 
 <!DOCTYPE html>
@@ -100,18 +100,11 @@
                <div class="row">
                   <div class="col-md-12 mb-4">
                      <div class="list-group">
-                        <a class="list-group-item list-group-item-action active"
-                           aria-current="true">
-                           กระท้อน
-                        </a>
-                        <a class="list-group-item list-group-item-action">กล้วยเฟอี</a>
-                        <a class="list-group-item list-group-item-action">กะทกรก</a>
-                        <a class="list-group-item list-group-item-action">กัดลิ้น</a>
-                        <a class="list-group-item list-group-item-action">กีวี (พืช)</a>
-                        <a class="list-group-item list-group-item-action">เกรปฟรุต</a>
-                        <a class="list-group-item list-group-item-action">เกาลัดญี่ปุ่น</a>
-                        <a class="list-group-item list-group-item-action">เกาลัดไทย</a>
-                        <a class="list-group-item list-group-item-action">แก้วมังกร</a>
+                        <?php foreach ($categories as $key => $value) {?>
+                           <a class="list-group-item list-group-item-action <?php echo ($key == 2) ? 'active' : '' ?>">
+                              <?php echo $value['name']; ?>
+                           </a>
+                        <?php }?>
                      </div>
                   </div>
                </div>
@@ -166,7 +159,7 @@
                   </div>
                </div>
                <div class="row">
-                  <?php foreach ($data as $key => $value) {?>
+                  <?php foreach ($products as $key => $value) {?>
                   <div class="col-6 col-sm-6 col-md-4 mb-4">
                      <div class="card">
                         <img width="300"
